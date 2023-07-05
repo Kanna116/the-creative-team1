@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    height: auto;
+    width: 100%;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.first{
+    width: 70%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+}
+.first .title{
+    width: 50%;
+    height: 100%;
+    font-size: 1rem;
+    padding: 20px;
+}
+.first .about{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family: 'PT Serif', serif;
+    padding: 20px;
+}
+.about h3{
+    text-transform: uppercase;
+    font-size: 1rem;
+
+}
+.about p{
+    width: 100%;
+    font-size: 1rem;
+    line-height: 25px;
+}
+.second{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    width: 70%;
+    margin-top: 20px;
+
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 400px;
+    
+    
+}
+
+.image-container figure img{
+    width: 250px;
+    height: 350px;
+}
+.image-container figure figcaption{
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 5px;;
+}
+.image-container p{
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+    margin-left: 5px;
+    font-family: 'PT Serif', serif;
+
+}
+.image-container:nth-child(2){
+    margin-top: 120px;
+}   
+.image-container:nth-last-child(2){
+    margin-top: 120px;
+    
+}
+
+@media (max-width:500px){
+    .first{
+        width: 90%;
+        height: 200px;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .first .title{
+        height: 40%;
+        width: 100%;
+    }
+    .first .about{
+        width: 100%;
+        height: 50%;
+        font-size: 1rem;
+
+    }
+    .second{
+        height: auto;
+        width:90%;
+        justify-content: space-around;
+
+    }
+    .second .image-container{
+        height: 250px;
+        width: 150px;
+    }
+    .image-container figure img{
+        height: 200px;
+        width: 130px;
+    }
+    .image-container figure figcaption{
+        font-size: .8rem;
+        font-weight: 600;
+
+    }
+    .image-container p{
+        font-weight: 400;
+        font-size: .6rem;
+        margin-left: 2px;
+    }
+    .image-container:nth-child(even){
+        margin-top: 60px;
+    }
+    .image-container:nth-child(odd){
+        margin-top: 0px;
+    }
+
+}
+@media (min-width:850px) and (max-width:1500px){
+    .image-container{
+        width: 300px;
+        height: 350px;
+        
+        
+    }
+    
+    .image-container figure img{
+        width: 200px;
+        height: 300px;
+    }
+
+}
+@media (min-width:710px) and (max-width:850px){
+    .image-container{
+        width: 250px;
+        height: 300px;
+        
+        
+    }
+    
+    .image-container figure img{
+        width: 180px;
+        height: 250px;
+    }
+}
+@media (min-width:500px) and (max-width:710px){
+    .second .image-container{
+        height: 270px;
+        width: 170px;
+    }
+    .image-container figure img{
+        height: 220px;
+        width: 150px;
+    }
+
+}
